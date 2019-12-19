@@ -44,14 +44,30 @@ function FindInGivenArray(name, Employee)
 }
 
 // --method to fing max of salary in the given array---
-function findMax(Employee) {
-    var  max = Employee[0];
+function findMaxage(Employee) {
+    var  max = Employee[0].age;
   
     for (var i = 1;i<=Employee.length;  i++) {
-      let v = arr[i].y;
-      min = (v < min) ? v : min;
+      var v = Employee[i].age;
       max = (v > max) ? v : max;
     }
   
-    return [min, max];
+    return max;
+  }
+
+  //method to find minimum of salary in the given array--
+  function findminage(Employee)
+  {
+      var min=Employee[0].age;
+      for(var i=1;i<=Employee.length;i++)
+      {
+          var v=Employee[i].age;
+      }
+  }
+
+  //method to insert new employee   to the the emolyee array
+
+  function insertEmployeee(obj)
+  {
+    Employee.push(obj)
   }
