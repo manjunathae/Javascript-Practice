@@ -32,9 +32,7 @@ var Employee =[
 
 ]
 
-
-// method to student name in the given array
-function FindInGivenArray(name)
+Array.prototype.FindInGivenArray =  function(name)
 {
     for (var i=0; i < Employee.length; i++) {
         if (Employee[i].name === name) {
@@ -43,8 +41,9 @@ function FindInGivenArray(name)
     }
 }
 
+
 // --method to fing max of salary in the given array---
-function findMaxage() {
+Array.prototype.findMaxage=function() {
     var  max = Employee[0].age;
   
     for (var i = 1;i<Employee.length;  i++) {
@@ -56,7 +55,7 @@ function findMaxage() {
   }
 
   //method to find minimum of salary in the given array--
-  function findminage()
+  Array.prototype.findminage=function()
   {
       var min=Employee[0].age;
       for(var i=1;i<Employee.length;i++)
@@ -69,7 +68,7 @@ function findMaxage() {
 
   //method to insert new employee   to the the emolyee array
 
-  function insertEmployeee(Id,Name,Genderr,Ager,Salrary)
+  Array.prototype.insertEmployeee=function (Id,Name,Genderr,Ager,Salrary)
   {
    Employee.push
     ({
@@ -82,3 +81,5 @@ function findMaxage() {
 
       return Employee;
   }
+
+
